@@ -32,18 +32,17 @@ if (!$db_selected) {
     die ('Не можу використати базу даних : ' . mysql_error());
 }
 
-/*
 
-*/
+// файл index.php
+if (isset($_POST['index-form'])){
 
-$date = date('Y-m-d H:i:s');
+  $date = date('Y-m-d H:i:s');
 
-mysql_insert('category', array($_POST['category-name']));
+  mysql_insert('category', array($_POST['category-name']));
 
-mysql_insert('product', array('name' => $_POST['product-name'], 'price' => $_POST['product-price'], 'category_name' => $_POST['category-name']));
+  mysql_insert('product', array('name' => $_POST['product-name'], 'price' => $_POST['product-price'], 'category_name' => $_POST['category-name']));
 
-mysql_insert('product-list', array('name' => $_POST['product-name'], 'date' => $date, 'price' => $_POST['product-price']));
-
+  mysql_insert('product-list', array('name' => $_POST['product-name'], 'date' => $date, 'price' => $_POST['product-price']));
 
 // Файл відповіді
 include_once 'header.php';
@@ -59,3 +58,11 @@ echo "Вас цікавить " . $_POST['product-name'] ;
 echo "</div>";
 
 include_once 'footer.php';
+/*
+  $myFile = "index-view.php";
+  $fh = fopen($myFile, 'w') or die("Не можу відкрити файл");
+  $stringData = $_POST['product-name'];
+  fwrite($fh, $stringData);
+  fclose($fh);*/
+
+}

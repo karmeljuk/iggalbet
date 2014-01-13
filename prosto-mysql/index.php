@@ -1,6 +1,6 @@
 <?php include_once 'header.php'; ?>
 
-  <form class="form-horizontal form-signin" action="form.php" method="POST" role="form">
+  <form class="form-horizontal form-signin" action="form.php" method="POST" role="form" id="index-form" >
     <fieldset>
 
       <!-- Form Name -->
