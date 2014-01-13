@@ -45,16 +45,7 @@ mysql_insert('product', array('name' => $_POST['product-name'], 'price' => $_POS
 mysql_insert('product-list', array('name' => $_POST['product-name'], 'date' => $date, 'price' => $_POST['product-price']));
 
 
-echo
-'<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Форма запиту продуктів та іншого</title>
-  <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"/>
-  <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
-</head>
-<body>';
+include_once 'header.php';
 
 echo
 '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">

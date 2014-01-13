@@ -1,30 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Форма запиту продуктів та іншого</title>
-  <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"/>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <div class="container">
-
-  <form class="form-signin" role="form">
-    <h2 class="form-signin-heading">Please sign in</h2>
-    <input type="text" class="form-control" placeholder="Email address" required autofocus>
-    <input type="password" class="form-control" placeholder="Password" required>
-    <label class="checkbox">
-      <input type="checkbox" value="remember-me"> Remember me
-    </label>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  </form>
+<?php include_once 'header.php'; ?>
 
   <form class="form-horizontal form-signin" action="form.php" method="POST" role="form">
     <fieldset>
 
       <!-- Form Name -->
-      <legend>Форма додавання всякого</legend>
+      <legend><h2 class="form-signin-heading">Форма додавання всякого</h2></legend>
 
       <!-- Text input-->
       <div class="control-group">
@@ -69,16 +49,5 @@
 
 </div> <!-- /container -->
 
-  <div class="container">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-
-      </div>
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-
-
-      </div>
-    </div>
-  </div>
 </body>
 </html>
