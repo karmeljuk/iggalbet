@@ -32,11 +32,41 @@ if (!$db_selected) {
     die ('Не можу використати базу даних : ' . mysql_error());
 }
 
-mysql_insert('category', array('grocery' => 'Бакалія', 'barrel' => 'Спиртне', 'chemicals' => 'Хімія'));
+/*
 
-mysql_insert('pruduct', array('name' => 'Борошно', 'price' => '12', 'category_name' => 'grocery'));
+*/
 
-mysql_insert('pruduct', array('name' => 'Вино', 'price' => '47', 'category_name' => 'Спиртне'));
+$date = date('Y-m-d H:i:s');
 
-mysql_insert('pruduct', array('name' => 'Мило', 'price' => '2', 'category_name  ' => 'Хімія'));
+mysql_insert('category', array($_POST['category-name']));
 
+mysql_insert('product', array('name' => $_POST['product-name'], 'price' => $_POST['product-price'], 'category_name' => $_POST['category-name']));
+
+mysql_insert('product-list', array('name' => $_POST['product-name'], 'date' => $date, 'price' => $_POST['product-price']));
+
+
+echo
+'<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма запиту продуктів та іншого</title>
+  <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css"/>
+  <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+</head>
+<body>';
+
+echo
+'<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+  <div class="alert alert-success">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>Вітаємо вас</strong> Спасибі за користування нашою формою. ';
+echo "Вас цікавить " . $_POST['product-name'] ;
+echo "</div>";
+echo "</div>";
+
+echo
+'</body>
+</html>';
