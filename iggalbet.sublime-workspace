@@ -1,0 +1,832 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"arr",
+				"array	$… = array (…)"
+			],
+			[
+				"di",
+				"die"
+			],
+			[
+				"prin",
+				"print_r($value"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ar",
+				"array	$… = array (…)"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"req1",
+				"req1	require_once …"
+			],
+			[
+				"incl",
+				"incl1	include_once …"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"foo",
+				"footer	<footer>"
+			],
+			[
+				"heade",
+				"header	Tag"
+			],
+			[
+				"head",
+				"header	<header>"
+			],
+			[
+				"he",
+				"header	<header>"
+			],
+			[
+				"title",
+				"title"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"if",
+				"ifelse	if … else …"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"mo",
+				"month"
+			],
+			[
+				"tuts",
+				"tuts_sites"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"offs",
+				"offset	.offset"
+			],
+			[
+				"off",
+				"offset	.offset"
+			],
+			[
+				"scro",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"wi",
+				"wrapInner	wrapInner"
+			],
+			[
+				"rea",
+				"ready	document.ready - $(function()"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"tr",
+				"border-top-left-radius"
+			],
+			[
+				"pr",
+				"pos-r	position: relative;"
+			],
+			[
+				"ea",
+				"earth"
+			],
+			[
+				"scrol",
+				"scroll	.scroll()"
+			],
+			[
+				"scroll",
+				"scrollPosition"
+			],
+			[
+				"funct",
+				"function"
+			],
+			[
+				"occupatio",
+				"occupation"
+			],
+			[
+				"pro",
+				"promise	.promise()"
+			],
+			[
+				"ls",
+				"letter-spacing"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"bg",
+				"bg+	background: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"cl",
+				"class	Attr"
+			],
+			[
+				"thumb",
+				"thumbnail"
+			],
+			[
+				"aside",
+				"aside"
+			],
+			[
+				"bore",
+				"border-radius"
+			],
+			[
+				"flex",
+				"flexslider"
+			],
+			[
+				"lett",
+				"letter-spacing"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"html",
+				"html5"
+			],
+			[
+				"bo",
+				"bootstrap"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"scri",
+				"JavaScript"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"cop",
+				"File: Copy Path"
+			],
+			[
+				"copy",
+				"File: Copy as Tag style"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"lint",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"subli",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"Sublime",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"jsh",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"js",
+				"JSLint"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"sublinter",
+				"SublimeLinter: Enable Debug Mode"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Disable Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"snippet html5",
+				"Snippet: Simple HTML5 Boilerplate"
+			],
+			[
+				"fet",
+				"Fetch: Manage"
+			],
+			[
+				"fetc",
+				"Fetch: Package"
+			],
+			[
+				"fe",
+				"Fetch: Package"
+			],
+			[
+				"PAC",
+				"Package Control: Enable Package"
+			],
+			[
+				"desab",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"Package Control: de",
+				"Package Control: Disable Package"
+			],
+			[
+				"plugi",
+				"SublimeLinter: Create Linter Plugin"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"jq",
+				"Snippet: jQuery.browser"
+			],
+			[
+				"fetch",
+				"Fetch: Manage"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"buil",
+				"Build: Build"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"togle",
+				"View: Toggle Minimap"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"ab",
+				"About"
+			],
+			[
+				"mar",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: bs3-navbar-fixed-top"
+			],
+			[
+				"",
+				"BracketHighlighter: Jump to Left Bracket"
+			],
+			[
+				"proge",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 354.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"clear",
+			"SublimeLinter: php enabled",
+			"SublimeLinter: php enabled (using \"php\" for executable)",
+			"sublime.active_window().active_view().settings().get('syntax')",
+			"cd",
+			"pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) ",
+			"import urllib.request,os;",
+			"urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler()));",
+			"os.makedirs(ipp) if not os.path.exists(ipp) else None;",
+			"ipp=sublime.installed_packages_path();",
+			"pf='Package Control.sublime-package';",
+			"import urllib2,os;"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/php-parse/prosto-parse/index.php",
+		"/var/www/iggalbet/prosto-mysql/index.php",
+		"/var/www/iggalbet/prosto-mysql/cpanel_create_db.php",
+		"/home/karmeljuk/qwqw.txt",
+		"/var/www/php-parse/phpclub-mysql/email.php",
+		"/var/www/php-parse/pizdo-parse/index.php",
+		"/var/www/php-parse/.idea/workspace.xml",
+		"/var/www/php-parse/phpclub-mysql/apple.php",
+		"/var/www/php-parse/.idea/encodings.xml",
+		"/etc/mysql/conf.d/utf8_charset.cnf",
+		"/etc/mysql/my.cnf",
+		"/var/www/php-parse/pixelcom-parse/index.php",
+		"/var/www/php-parse/pixelcom-parse/index.php~",
+		"/var/www/php-parse/ruseller-parse/index.php",
+		"/var/www/php-parse/README.md",
+		"/var/www/php-parse/prosto-parse/m1.php",
+		"/var/www/iggalbet/phpclub-mysql/email.php",
+		"/home/karmeljuk/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/var/www/iggalbet/phpclub-mysql/README.md",
+		"/var/www/iggalbet/phpclub-mysql/request.html",
+		"/var/www/iggalbet/phpclub-mysql/apple.php",
+		"/home/karmeljuk/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/karmeljuk/.gitconfig",
+		"/var/www/iggalbet/prosto-parse/m1.php",
+		"/home/karmeljuk/Work/Сайти/road-of-myths.com/.Неназваний документ",
+		"/home/karmeljuk/Downloads/PhpStorm-131.374/Install-Linux-tar.txt",
+		"/home/karmeljuk/Downloads/PhpStorm-131.374/bin/idea.properties",
+		"/home/karmeljuk/Downloads/PhpStorm-131.374/build.txt",
+		"/home/karmeljuk/Music/Adiemus/архив/Songs of Sanctuary.log",
+		"/home/karmeljuk/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/var/www/iggalbet/ruseller-parse/index.php",
+		"/var/www/iggalbet/pizdo-parse/index.php",
+		"/home/xata/Work/Sublime Text/php-fund.sublime-project",
+		"/var/www/iggalbet/habra-parse/index.php",
+		"/home/karmeljuk/samba",
+		"/home/karmeljuk/.gnome2/nautilus-scripts/mount.sh",
+		"/var/www/PHP-Fundamentals/functions-and-scope/index.php",
+		"/home/xata/Work/CMS/WP/Переклади/README.md",
+		"/home/xata/Work/CMS/WP/Переклади/.gitignore",
+		"/home/xata/Work/CMS/WP/Переклади/jetpack-uk.po",
+		"/home/xata/Work/Сайти/punkt.com.ua/uk.po",
+		"/home/xata/Work/Сайти/creator.biz.ua/Переклади/jigoshop-uk.po",
+		"/home/xata/Downloads/style.css/iconizr-svg-sprite.css",
+		"/var/www/PHP-Fundamentals/formatted-strings/index.php",
+		"/var/www/PHP-Fundamentals/includes/style.css",
+		"/var/www/PHP-Fundamentals/includes/inc/header.php",
+		"/var/www/PHP-Fundamentals/includes/inc/footer.php",
+		"/var/www/PHP-Fundamentals/includes/index.php",
+		"/var/www/PHP-Fundamentals/includes/about.php",
+		"/var/www/PHP-Fundamentals/inclides/inc/footer.php",
+		"/var/www/PHP-Fundamentals/style.css",
+		"/var/www/PHP-Fundamentals/sc.js",
+		"/home/xata/.config/sublime-text-3/Packages/User/SublimeLint.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/User/CSSLint.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/CSSLint/CSSLint.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/sublimelint/SublimeLint.sublime-settings",
+		"/home/xata/.cache/.fr-Ymqkpy/README.markdown",
+		"/home/xata/.config/sublime-text-3/Packages/JSHint Gutter/.jshintrc",
+		"/home/xata/.config/sublime-text-3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/JSLint/JSLint.sublime-build",
+		"/home/xata/.config/sublime-text-3/Packages/JSLint/JSLint.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/JSLint/README.md",
+		"/var/www/PHP-Fundamentals/new.php",
+		"/home/xata/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/var/www/PHP-Fundamentals/conditionals/index.php",
+		"/var/www/PHP-Fundamentals/loops/index.php",
+		"/home/xata/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap",
+		"/home/xata/Work/Sublime Text/emmet.md",
+		"/home/xata/.config/sublime-text-3/Settings/SideBarEnhancements.json",
+		"/home/xata/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/var/www/PHP-Fundamentals/script.js",
+		"/home/xata/npm-debug.log",
+		"/home/xata/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/xata/.cache/.fr-0LDSRx/Support/entities.txt",
+		"/home/xata/.cache/.fr-AuWR4f/package-metadata.json",
+		"/home/xata/.config/sublime-text-3/Packages/User/Fetch.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/var/www/PHP-Fundamentals/__tmp_package.zip",
+		"/home/xata/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/xata/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/xata/.config/sublime-text-3/Packages/Alignment/Default (Linux).sublime-keymap",
+		"/home/xata/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/Alignment/Base File.sublime-settings",
+		"/var/www/PHP-Fundamentals/arrays/index.php",
+		"/home/xata/Downloads/phpsh-master/README.md",
+		"/home/xata/Downloads/style.css",
+		"/home/xata/.config/sublime-text-3/Packages/SublimeLinter/Default (Linux).sublime-keymap",
+		"/home/xata/Work/Сайти/webxid/962986/www/wp-content/plugins/prosto-slider/prosto-slider.php",
+		"/var/www/index.php",
+		"/var/www/dogs.php",
+		"/home/xata/Work/Tutsplus/parallax/parallax/index.html",
+		"/home/xata/Work/Tutsplus/parallax/parallax/css/main.css",
+		"/home/xata/Work/Tutsplus/parallax/parallax/js/parallasx.js",
+		"/home/xata/.cache/.fr-cK055N/README.md",
+		"/home/xata/.config/sublime-text-3/Packages/Russian.aff",
+		"/home/xata/.config/sublime-text-3/Packages/uk_UA.aff",
+		"/home/xata/.cache/.fr-40p6zL/README_uk_UA.txt",
+		"/home/xata/.config/sublime-text-3/Packages/uk_UA.dic",
+		"/home/xata/.config/sublime-text-3/Packages/Russian.txt",
+		"/home/xata/.config/sublime-text-3/Packages/README_uk_UA.txt",
+		"/home/xata/.config/sublime-text-3/Packages/HTML/HTML.tmLanguage",
+		"/home/xata/Downloads/rus/Russian.aff",
+		"/home/xata/.config/sublime-text-3/Packages/SublimeCodeIntel/README.rst",
+		"/home/xata/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/xata/Work/Tutsplus/parallax/parallax/img/earth.png",
+		"/home/xata/Work/Tutsplus/parallax/parallax/img/stars.gif",
+		"/home/xata/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/User/PluginAutocompleteAll.py",
+		"/home/xata/.config/sublime-text-3/Packages/User/Emmet.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/Emmet/Emmet.sublime-settings",
+		"/home/xata/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/home/xata/.cache/.fr-0mA7kh/README.md",
+		"/home/xata/.cache/.fr-u8yNld/package-metadata.json",
+		"/home/xata/.cache/.fr-ObMX0D/README.md",
+		"/home/xata/.cache/.fr-SjeY52/package-metadata.json",
+		"/home/xata/CSS-autocomplete.sublime-package/README.md",
+		"/home/xata/.cache/.fr-kRAzdy/$map.sublime-snippet",
+		"/home/xata/.cache/.fr-uAcT6D/prependTo.sublime-snippet",
+		"/home/xata/.config/sublime-text-3/Packages/User/build/PHP.sublime-build",
+		"/home/xata/Work/Tutsplus/parallax/parallax/img/grid.gif",
+		"/home/xata/Work/Sublime Text/parallax.sublime-project",
+		"/home/xata/Work/Tutsplus/project-files/project-files/lesson03-end/index.html",
+		"/home/xata/Work/Верстка/HTML/Parallax/css/normalize.css",
+		"/home/xata/Work/Верстка/HTML/Parallax/js/jquery.js",
+		"/home/xata/Work/Верстка/HTML/Parallax/index.html",
+		"/home/xata/.config/sublime-text-3/Packages/AdvancedNewFile/README.md",
+		"/home/xata/Work/Верстка/HTML/Parallax/normalize.css",
+		"/home/xata/Work/php/funcs.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mysql_select()",
+			"mysql_select() ",
+			"prepare",
+			"$f",
+			"default_encoding",
+			"$name",
+			"$",
+			"'",
+			"$name",
+			"+n",
+			"ctrl+super",
+			"toPluck",
+			"topPluck",
+			";",
+			"theme",
+			"sublimelinter",
+			"$month = array(\n  'January' => 'It is January', \n  'Fenruary' => 'It is Fenruary',\n  'March' => 'It is March'\n  );",
+			"wrap",
+			"ctrl+alt+w",
+			"/\\\\()\\\"'-:,.;",
+			"./\\\\()\\\"'-:,.;",
+			"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=",
+			"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{",
+			"./\\\\()\\\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+			"spell_check",
+			"save_on_focus_lost",
+			"bold_folder_labels",
+			"css",
+			"tab",
+			"alt+",
+			"<article>",
+			"article",
+			"    /*",
+			"gthumb",
+			"GThumb",
+			"gthumb",
+			"GThumb",
+			"photoshop",
+			"Photoshop",
+			"seamonkey\"",
+			"SeaMonkey\"",
+			"{name: 'jeff', age: 27, occupation: 'web dev'",
+			"<h2>.+<h2>",
+			"the name is ",
+			"the name",
+			"name",
+			"meta",
+			"\n	<!-- Mobile Specific Metas\n  ================================================== -->\n	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">\n",
+			"==================================================",
+			"meta",
+			"Meta",
+			"meta",
+			"title",
+			">\n",
+			"=\"\">\n",
+			"================================================== ",
+			"Meta",
+			"meta",
+			"@-webkit-viewport{width:device-width}@-moz-viewport{width:device-width}@-ms-viewport{width:device-width}@-o-viewport{width:device-width}@viewport{width:device-width}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}img{-moz-box-sizing:content-box;",
+			"header",
+			"Popular",
+			"Latest",
+			"packages",
+			"forms",
+			"files",
+			"wp_shortlink_wp_head",
+			"'themify'",
+			"themify",
+			"&laquo; Prev",
+			"content.php",
+			"Cancel",
+			"%3$s\">Log out?",
+			"comments.php",
+			"Your Name",
+			"cforms contact",
+			"load_theme_textdomain",
+			"base",
+			"Nothing",
+			"Nothing found",
+			"Nothing found for",
+			"Page not found.",
+			"Sorry, nothing found.",
+			"posts by",
+			"Posts by",
+			"themify",
+			"shortcut",
+			"icon",
+			"shortcut icon",
+			"rel",
+			"link",
+			"img",
+			"&laquo; Prev",
+			"next ",
+			"Logged in as ",
+			");\n",
+			"One Comment",
+			"No Comments",
+			"#headerimg{\n",
+			"#header h1 a{\n",
+			"#header {\n",
+			"absolute",
+			"11px;\n	}\n",
+			";\n	}\n",
+			"\n	}\n",
+			"}\n",
+			"h1{\n",
+			" {",
+			"/* CSS Document */\n",
+			"<link rel=\"stylesheet\" href=\"<?php bloginfo('stylesheet_url'); ?>\" type=\"text/css\" media=\"screen\" />\n<link rel=\"pingback\" href=\"<?php bloginfo('pingback_url'); ?>\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"/wp-content/plugins/ParallaxSlider/css/style.css\" />\n<script src=\"/wp-content/plugins/ParallaxSlider/js/cufon-yui.js\" type=\"text/javascript\"></script>\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 118.0
+	},
+	"output.exec":
+	{
+		"height": 106.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 118.0
+	},
+	"project": "iggalbet.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"fonts/websymbols/websymbols-regular-webfont.woff"
+			],
+			[
+				"html",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Work/Sublime Text/subl-config.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 129.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
