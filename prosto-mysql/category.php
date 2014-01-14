@@ -17,9 +17,9 @@
 
     <!-- Button -->
     <div class="control-group">
-      <label class="control-label" for="singlebutton"></label>
+      <label class="control-label" for="category-add"></label>
       <div class="controls">
-        <button id="singlebutton" name="singlebutton" class="btn btn-primary">Додати</button>
+        <button id="singlebutton" name="category-add" class="btn btn-primary">Додати</button>
       </div>
     </div>
 
@@ -36,30 +36,22 @@
 <div class="control-group">
   <label class="control-label" for="checkboxes">Виберіть категорію</label>
   <div class="controls">
+
+  <?php foreach ($cat_name as $name): ?>
     <label class="checkbox" for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Категоія one">
-      Категоія one
+      <input type="checkbox" name="checkboxes" id="checkboxes-$cat_name" value="$cat_name">
+      <?php echo $cat_name; ?>
     </label>
-    <label class="checkbox" for="checkboxes-1">
-      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Категоія two">
-      Категоія two
-    </label>
-    <label class="checkbox" for="checkboxes-2">
-      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="Категоія one">
-      Категоія one
-    </label>
-    <label class="checkbox" for="checkboxes-3">
-      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="Категоія two">
-      Категоія two
-    </label>
+  <?php endforeach ?>
+
   </div>
 </div>
 
 <!-- Button -->
 <div class="control-group">
-  <label class="control-label" for="singlebutton"></label>
+  <label class="control-label" for="category-del"></label>
   <div class="controls">
-    <button id="singlebutton" name="singlebutton" class="btn btn-danger">Знищити</button>
+    <button id="category-del" name="category-del" class="btn btn-danger">Знищити</button>
   </div>
 </div>
 
@@ -67,3 +59,4 @@
 </form>
 
 <?php include_once 'footer.php'; ?>
+
