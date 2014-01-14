@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Час створення: Січ 13 2014 р., 16:26
+-- Час створення: Січ 14 2014 р., 17:43
 -- Версія сервера: 5.5.34
 -- Версія PHP: 5.4.6-1ubuntu1.5
 
@@ -27,17 +27,20 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `category` (
-  `grocery` text COLLATE utf8_bin NOT NULL,
-  `barrel` text COLLATE utf8_bin NOT NULL,
-  `chemicals` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Product categories';
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `cat-name` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Дамп даних таблиці `category`
 --
 
-INSERT INTO `category` (`grocery`, `barrel`, `chemicals`) VALUES
-('Бакалія', 'Спиртне', 'Хімія');
+INSERT INTO `category` (`id`, `cat-name`) VALUES
+(3, 'Нова катег'),
+(4, 'Категорія'),
+(5, 'Слони'),
+(6, 'Кава');
 
 -- --------------------------------------------------------
 
@@ -46,12 +49,12 @@ INSERT INTO `category` (`grocery`, `barrel`, `chemicals`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `product` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` text COLLATE utf8_bin NOT NULL,
-  `price` int(10) NOT NULL,
-  `category_name` text COLLATE utf8_bin NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `cat-name` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `price` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Product name and price' AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -60,12 +63,12 @@ CREATE TABLE IF NOT EXISTS `product` (
 --
 
 CREATE TABLE IF NOT EXISTS `product-list` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` text COLLATE utf8_bin NOT NULL,
-  `price` int(10) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `price` int(10) DEFAULT NULL,
+  `date` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Product name and price' AUTO_INCREMENT=27 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
