@@ -39,17 +39,17 @@
   <div class="controls">
   <?php
     $sql = mysql_query("select * from category");
-    $cat_name = mysql_fetch_object($sql);
-    foreach ($cat_name as $name):
+    while($cat_name = mysql_fetch_object($sql)) :
+    $name = $cat_name->cat_name;
+    $id = $cat_name->id;
   ?>
-    <label class="checkbox" for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-$cat_name" value="$name">
-      <?php //echo $name[0];
-      var_dump($name[0]); exit;
-      ?>
+    <label class="checkbox" for="<?php echo $name; ?>">
+      <input type="checkbox" name="item[]" id="<?php echo $id; ?>" value="<?php echo $name; ?>">
+      <?php echo $name; ?>
+      <span>, </span>
+      <?php echo $id; ?>
     </label>
-  <?php endforeach ?>
-
+  <?php endwhile; ?>
   </div>
 </div>
 

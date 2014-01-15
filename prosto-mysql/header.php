@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>Форма запиту продуктів та іншого</title>
   <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css"/>
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>

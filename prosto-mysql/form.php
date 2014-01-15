@@ -38,23 +38,43 @@ echo
 // головна сторінка - додавання продуктів
 if (isset($_POST['category-add'])) {
 
-  mysql_insert('category', array('cat_name' => $_POST['add-category-name']));
-  mysql_insert_id();
+  if(empty($_REQUEST['add-category-name'])) {
+    echo "<p>Ви не написали жодної категорії</p>";
+  }
 
-echo
-'
-  <p>Спасибі, що скористалися нашою формою. Ви додали категорію <strong>' . $_POST['add-category-name'] . '</strong>
-';
+  else {
+    mysql_insert('category', array('cat_name' => $_POST['add-category-name']));
+    mysql_insert_id();
+
+    echo
+    '
+      <p>Спасибі, що скористалися нашою формою. Ви додали категорію <strong>' . $_POST['add-category-name'] . '</strong>
+    ';
+  }
 }
 
 elseif (isset($_POST['category-del'])) {
-
+/*
   mysql_delete('category', array('cat_name' => $_POST['del-category-name']));
 
-echo
-'
-  <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>
-';
+  echo
+  '
+    <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>
+  '; */
+
+  if(empty($_REQUEST['item'])) {
+    echo "<p>Ви не вибрали жодної категорії</p>";
+  }
+  else {
+      foreach($_REQUEST['item'] as $id) {
+      mysql_delete('category', array('id' => $_POST['item[]']));
+
+      echo
+      '
+        <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>
+      ';
+    }
+  }
 }
 
 mysql_close();
