@@ -1,4 +1,5 @@
 <?php include_once 'header.php'; ?>
+<?php include_once 'mysql_connect.php'; ?>
 
 <form class="form-horizontal form-signin" action="form.php" method="POST" role="form">
   <fieldset>
@@ -39,10 +40,10 @@
   <?php
     $sql = mysql_query("select * from category");
     $cat_name = mysql_fetch_object($sql);
-
-    foreach ($cat_name as $name): ?>
+    foreach ($cat_name as $name):
+  ?>
     <label class="checkbox" for="checkboxes-0">
-      <input type="checkbox" name="checkboxes" id="checkboxes-$cat_name" value="$cat_name">
+      <input type="checkbox" name="checkboxes" id="checkboxes-$cat_name" value="$name">
       <?php echo $name; ?>
     </label>
   <?php endforeach ?>
