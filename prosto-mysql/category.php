@@ -44,7 +44,9 @@
   ?>
     <label class="checkbox" for="checkboxes-0">
       <input type="checkbox" name="checkboxes" id="checkboxes-$cat_name" value="$name">
-      <?php echo $result = $name->cat_name; ?>
+      <?php //echo $name[0];
+      var_dump($name[0]); exit;
+      ?>
     </label>
   <?php endforeach ?>
 
