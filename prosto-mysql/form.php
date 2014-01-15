@@ -38,7 +38,7 @@ echo
 // головна сторінка - додавання продуктів
 if (isset($_POST['category-add'])) {
 
-  mysql_insert('category', array('cat-name' => $_POST['add-category-name']));
+  mysql_insert('category', array('cat_name' => $_POST['add-category-name']));
   mysql_insert_id();
 
 echo
@@ -49,7 +49,7 @@ echo
 
 elseif (isset($_POST['category-del'])) {
 
-  mysql_delete('category', array('cat-name' => $_POST['del-category-name']));
+  mysql_delete('category', array('cat_name' => $_POST['del-category-name']));
 
 echo
 '
