@@ -6,17 +6,13 @@ include_once 'mysql_connect.php';
 function mysql_insert($table, $inserts) {
     $values = array_map('mysql_real_escape_string', array_values($inserts));
     $keys = array_keys($inserts);
-
     return mysql_query('INSERT INTO `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
 }
 
-function mysql_delete($table, $id) {
+/*function mysql_delete($table, $id) {
     $values = array_map('mysql_real_escape_string');
-    //$keys = array_keys($delete);
-
-    //return mysql_query('DELETE FROM `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
     return mysql_query("DELETE FROM $table where id='$id'");
-}
+}*/
 
 
 /*
@@ -62,16 +58,19 @@ elseif (isset($_POST['category-del'])) {
     <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>
   '; */
 
-  if(empty($_REQUEST['item'])) {
+  if(empty($_POST['item'])) {
     echo "<p>Ви не вибрали жодної категорії</p>";
   }
   else {
-      foreach($_REQUEST['item'] as $id) {
-      mysql_delete('category', array('id' => $_POST['item[]']));
+      foreach($_POST['item'] as $value) {
+      //mysql_delete('category', array('id' => $_POST['item[]']));
+
+        $sql = "DELETE FROM category WHERE id =".$value;
+                    mysql_query ($sql);
 
       echo
       '
-        <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>
+        <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['item'] . '</strong>
       ';
     }
   }

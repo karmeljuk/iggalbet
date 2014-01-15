@@ -44,10 +44,8 @@
     $id = $cat_name->id;
   ?>
     <label class="checkbox" for="<?php echo $name; ?>">
-      <input type="checkbox" name="item[]" id="<?php echo $id; ?>" value="<?php echo $name; ?>">
-      <?php echo $name; ?>
-      <span>, </span>
-      <?php echo $id; ?>
+      <input type="checkbox" name="item[]" value="<?php echo $id; ?>" id="<?php echo $name; ?>">
+      <?php echo $id; ?><span>. </span><?php echo $name; ?>
     </label>
   <?php endwhile; ?>
   </div>
