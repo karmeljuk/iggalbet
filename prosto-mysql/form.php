@@ -12,11 +12,12 @@ function mysql_insert($table, $inserts) {
     return mysql_query('INSERT INTO `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
 }
 
-function mysql_delete($table, $delete) {
-    $values = array_map('mysql_real_escape_string', array_values($delete));
-    $keys = array_keys($delete);
+function mysql_delete($table, $id) {
+    $values = array_map('mysql_real_escape_string');
+    //$keys = array_keys($delete);
 
-    return mysql_query('DELETE FROM `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
+    //return mysql_query('DELETE FROM `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
+    return mysql_query("DELETE FROM $table where id='$id'");
 }
 
 // Спроба підключення до серверу MySQL:
