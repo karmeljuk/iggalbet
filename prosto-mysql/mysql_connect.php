@@ -18,7 +18,7 @@ if (!$link) {
   die('Не з\'єднано : ' . mysql_error());
 }
 
-$db_selected = mysql_select_db('prosto-mysql', $link);
+$db_selected = mysql_select_db('mydb', $link);
 
 if (!$db_selected) {
     die ('Не можу використати базу даних : ' . mysql_error());

@@ -58,6 +58,25 @@ elseif (isset($_POST['category-del'])) {
   }
 }
 
+elseif (isset($_POST['add-product-name'])) {
+
+  if(empty($_POST['product-name'])) {
+    echo "<p>Ви не зазначили жодної продукту</p>";
+  }
+  else {
+      foreach($_POST['product-name'] as $value) {
+
+        $sql = "INSERT INTO product WHERE category_id ='$value'";
+        mysql_query ($sql);
+
+      echo
+      '
+        <p>Спасибі, що скористалися нашою формою. Ви видалили продукт <strong>' . $_POST['product-name'][0] . '</strong>
+      ';
+    }
+  }
+}
+
 mysql_close();
 echo
 '

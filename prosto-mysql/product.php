@@ -11,8 +11,13 @@
     <div class="control-group">
       <label class="control-label" for="textinput">Напишіть назву продукту</label>
       <div class="controls">
-        <input id="textinput" name="add-category-name" type="text" placeholder="продукт..." class="input-xlarge">
-
+        <input id="product-name" name="product-name[]" type="text" placeholder="продукт..." class="input-xlarge">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="textinput">Вкажіть вартість продукту</label>
+      <div class="controls">
+        <input id="product-price" name="product-price[]" type="text" placeholder="ціна..." class="input-xlarge">
       </div>
     </div>
 
@@ -36,9 +41,9 @@
 
     <!-- Button -->
     <div class="control-group">
-      <label class="control-label" for="category-add"></label>
+      <label class="control-label" for="add-product-name"></label>
       <div class="controls">
-        <button id="singlebutton" name="category-add" class="btn btn-primary">Додати</button>
+        <button id="singlebutton" name="add-product-name" class="btn btn-primary">Додати</button>
       </div>
     </div>
 
