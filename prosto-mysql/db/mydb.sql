@@ -1,51 +1,88 @@
-SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
-SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
-SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+-- phpMyAdmin SQL Dump
+-- version 3.4.11.1deb1
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost
+-- Час створення: Січ 16 2014 р., 16:01
+-- Версія сервера: 5.5.34
+-- Версія PHP: 5.4.6-1ubuntu1.5
 
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-USE `mydb` ;
-
--- -----------------------------------------------------
--- Table `mydb`.`category`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`category` (
-  `id` INT NOT NULL,
-  `cat_name` VARCHAR(45) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
--- -----------------------------------------------------
--- Table `mydb`.`product`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`product` (
-  `product_name` VARCHAR(16) NOT NULL,
-  `price` TINYINT(4) NULL,
-  `category_id` INT NOT NULL,
-  `id` VARCHAR(45) NOT NULL,
-  INDEX `fk_product_category_idx` (`category_id` ASC),
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- БД: `mydb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблиці `category`
+--
+
+CREATE TABLE IF NOT EXISTS `category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cat_name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп даних таблиці `category`
+--
+
+INSERT INTO `category` (`id`, `cat_name`) VALUES
+(1, 'Овочі'),
+(2, 'Фрукти');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблиці `product`
+--
+
+CREATE TABLE IF NOT EXISTS `product` (
+  `product_name` varchar(16) NOT NULL,
+  `price` tinyint(4) DEFAULT NULL,
+  `category_id` int(11) NOT NULL,
+  `id` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_product_category`
-    FOREIGN KEY (`category_id`)
-    REFERENCES `mydb`.`category` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+  KEY `fk_product_category_idx` (`category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
 
--- -----------------------------------------------------
--- Table `mydb`.`product_list`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`product_list` (
-  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
-  `product_id` VARCHAR(45) NOT NULL,
-  INDEX `fk_product_list_product1_idx` (`product_id` ASC),
-  CONSTRAINT `fk_product_list_product1`
-    FOREIGN KEY (`product_id`)
-    REFERENCES `mydb`.`product` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+--
+-- Структура таблиці `product_list`
+--
 
+CREATE TABLE IF NOT EXISTS `product_list` (
+  `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `product_id` varchar(45) NOT NULL,
+  KEY `fk_product_list_product1_idx` (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `product`
+--
+ALTER TABLE `product`
+  ADD CONSTRAINT `fk_product_category` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `product_list`
+--
+ALTER TABLE `product_list`
+  ADD CONSTRAINT `fk_product_list_product1` FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

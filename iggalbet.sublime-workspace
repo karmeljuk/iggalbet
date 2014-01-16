@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"va",
+				"value"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"re",
+				"ret	return"
+			],
+			[
+				"my",
+				"mysql_"
+			],
+			[
+				"cat",
+				"cat_name"
+			],
+			[
+				"for",
+				"foreach	<?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"до",
+				"додавання"
+			],
+			[
+				"ка",
+				"категорії"
+			],
+			[
 				"met",
 				"method	Attr"
 			],
@@ -78,10 +110,6 @@
 			[
 				"title",
 				"title"
-			],
-			[
-				"for",
-				"for	for …"
 			],
 			[
 				"if",
@@ -228,42 +256,26 @@
 	"buffers":
 	[
 		{
-			"file": "prosto-mysql/form.php",
-			"settings":
-			{
-				"buffer_size": 1856,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "prosto-mysql/index-view.php",
-			"settings":
-			{
-				"buffer_size": 439,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "prosto-mysql/category.php",
 			"settings":
 			{
-				"buffer_size": 2109,
+				"buffer_size": 1903,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "prosto-mysql/index.php",
+			"file": "prosto-mysql/form.php",
 			"settings":
 			{
-				"buffer_size": 1818,
+				"buffer_size": 1687,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "prosto-mysql/header.php",
+			"contents": "<?php \n\nif(empty($_REQUEST['category-del'])) {\n    echo \"<p>Ви не вибрали жодної категорії</p>\";\n}\nelse {\n    foreach($_REQUEST['item'] as $id) {\n    mysql_delete('category', array('cat_name' => $_POST['del-category-name']));\n\n    echo\n    '\n      <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>\n    ';\n  }\n}\n\n?>",
 			"settings":
 			{
-				"buffer_size": 1160,
+				"buffer_size": 381,
 				"line_ending": "Unix"
 			}
 		}
@@ -274,6 +286,54 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"cop",
+				"File: Copy Path"
+			],
+			[
+				"Stat",
+				"Git: Status"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add..."
+			],
+			[
+				"gti comm",
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Toggle Annotations"
+			],
+			[
+				"snipp boo",
+				"Snippet: Bootstrap hero example"
+			],
+			[
+				"bootstrap col",
+				"Snippet: Bootstrap basic two column grid"
+			],
+			[
+				"snippet:boots",
+				"Snippet: Bootstrap modal"
+			],
 			[
 				"boo",
 				"Snippet: Bootstrap starter"
@@ -349,14 +409,6 @@
 			[
 				"pac",
 				"Package Control: List Packages"
-			],
-			[
-				"php",
-				"Set Syntax: PHP"
-			],
-			[
-				"cop",
-				"File: Copy Path"
 			],
 			[
 				"ena",
@@ -552,19 +604,31 @@
 	},
 	"file_history":
 	[
-		"/var/www/iggalbet/prosto-mysql/index.php",
-		"/var/www/php-parse/phpclub-mysql/request.html",
-		"/var/www/php-parse/phpclub-mysql/email.php",
+		"/var/www/iggalbet/prosto-mysql/mysql_connect.php",
 		"/var/www/iggalbet/prosto-mysql/header.php",
+		"/home/karmeljuk/Downloads/website/index.html",
+		"/home/karmeljuk/Downloads/website/css/style.css",
+		"/home/karmeljuk/Pictures/skype/csshat1.2/README.txt",
+		"/var/www/iggalbet/prosto-mysql/form.php",
+		"/home/karmeljuk/Downloads/Tuts-video/README.md",
+		"/home/karmeljuk/Downloads/tuts video/php/functions",
+		"/var/www/iggalbet/prosto-mysql/index.php",
+		"/var/www/php-parse/phpclub-mysql/email.php",
+		"/var/www/php-parse/phpclub-mysql/request.html",
+		"/var/www/iggalbet/prosto-mysql/index.html",
+		"/home/karmeljuk/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap",
+		"/home/karmeljuk/.conkyrc",
+		"/home/karmeljuk/Downloads/nvert-links",
+		"/home/karmeljuk/Downloads/dn/dn/hts-log.txt",
+		"/var/www/iggalbet/prosto-mysql/category.php",
+		"/var/www/iggalbet/prosto-mysql/index-view.php",
 		"/var/www/iggalbet/prosto-mysql/footer.php",
 		"/var/www/iggalbet/prosto-mysql/README.md",
 		"/var/www/iggalbet/prosto-mysql/assets/css/lib/bootstrap.min.css",
-		"/var/www/iggalbet/prosto-mysql/index.html",
 		"/var/www/iggalbet/prosto-mysql/assets/js/lib/require.js",
 		"/var/www/iggalbet/prosto-mysql/assets/js/main.js",
 		"/var/www/iggalbet/prosto-mysql/assets/js/main-built.js",
 		"/var/www/iggalbet/Bootstrap-Form-Builder/.gitignore",
-		"/var/www/iggalbet/prosto-mysql/form.php",
 		"/var/www/php-parse/phpclub-mysql/README.md",
 		"/var/www/iggalbet/prosto-mysql/dist/css/bootstrap.min.css",
 		"/var/www/iggalbet/prosto-mysql/dist/js/bootstrap.min.js",
@@ -667,19 +731,7 @@
 		"/home/xata/.cache/.fr-40p6zL/README_uk_UA.txt",
 		"/home/xata/.config/sublime-text-3/Packages/uk_UA.dic",
 		"/home/xata/.config/sublime-text-3/Packages/Russian.txt",
-		"/home/xata/.config/sublime-text-3/Packages/README_uk_UA.txt",
-		"/home/xata/.config/sublime-text-3/Packages/HTML/HTML.tmLanguage",
-		"/home/xata/Downloads/rus/Russian.aff",
-		"/home/xata/.config/sublime-text-3/Packages/SublimeCodeIntel/README.rst",
-		"/home/xata/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
-		"/home/xata/Work/Tutsplus/parallax/parallax/img/earth.png",
-		"/home/xata/Work/Tutsplus/parallax/parallax/img/stars.gif",
-		"/home/xata/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
-		"/home/xata/.config/sublime-text-3/Packages/User/PluginAutocompleteAll.py",
-		"/home/xata/.config/sublime-text-3/Packages/User/Emmet.sublime-settings",
-		"/home/xata/.config/sublime-text-3/Packages/Emmet/Emmet.sublime-settings",
-		"/home/xata/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
-		"/home/xata/.cache/.fr-0mA7kh/README.md"
+		"/home/xata/.config/sublime-text-3/Packages/README_uk_UA.txt"
 	],
 	"find":
 	{
@@ -694,9 +746,17 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"\"",
+			"cat-name",
+			"eth0",
+			"eth",
+			"мережа",
+			"inserts",
+			"singlebutton",
+			"category-add",
 			"category-name",
 			"\"",
 			"'",
@@ -818,6 +878,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"cat_name"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -828,168 +889,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "prosto-mysql/form.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1856,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1239,
-								1239
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "prosto-mysql/index-view.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								439,
-								439
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "prosto-mysql/category.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2109,
+						"buffer_size": 1903,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2073,
-								2073
+								1437,
+								1437
 							]
 						],
 						"settings":
@@ -997,18 +914,10 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1021,94 +930,30 @@
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
-							],
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "prosto-mysql/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1818,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
@@ -1120,20 +965,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "prosto-mysql/header.php",
+					"buffer": 1,
+					"file": "prosto-mysql/form.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1160,
+						"buffer_size": 1687,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								704,
-								704
+								1332,
+								1332
 							]
 						],
 						"settings":
@@ -1141,18 +986,10 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1165,22 +1002,101 @@
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
-								"bh_square_close"
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
 							],
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
@@ -1188,7 +1104,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1237,6 +1153,10 @@
 	{
 		"height": 0.0
 	},
+	"output.git":
+	{
+		"height": 118.0
+	},
 	"output.unsaved_changes":
 	{
 		"height": 118.0
@@ -1244,7 +1164,7 @@
 	"project": "iggalbet.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 64.0
 	},
 	"save_all_on_build": false,
 	"select_file":
