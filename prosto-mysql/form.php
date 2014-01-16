@@ -9,16 +9,6 @@ function mysql_insert($table, $inserts) {
     return mysql_query('INSERT INTO `'.$table.'` (`'.implode('`,`', $keys).'`) VALUES (\''.implode('\',\'', $values).'\')');
 }
 
-/*function mysql_delete($table, $id) {
-    $values = array_map('mysql_real_escape_string');
-    return mysql_query("DELETE FROM $table where id='$id'");
-}*/
-
-
-/*
-Файл перегляду
-*/
-
 include_once 'header.php';
 echo
 '
@@ -31,7 +21,7 @@ echo
   <div class="modal-body">';
 
 
-// головна сторінка - додавання продуктів
+// категорій сторінка - додавання їх
 if (isset($_POST['category-add'])) {
 
   if(empty($_REQUEST['add-category-name'])) {
@@ -50,27 +40,19 @@ if (isset($_POST['category-add'])) {
 }
 
 elseif (isset($_POST['category-del'])) {
-/*
-  mysql_delete('category', array('cat_name' => $_POST['del-category-name']));
-
-  echo
-  '
-    <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['del-category-name'] . '</strong>
-  '; */
 
   if(empty($_POST['item'])) {
     echo "<p>Ви не вибрали жодної категорії</p>";
   }
   else {
       foreach($_POST['item'] as $value) {
-      //mysql_delete('category', array('id' => $_POST['item[]']));
 
-        $sql = "DELETE FROM category WHERE id =".$value;
-                    mysql_query ($sql);
+        $sql = "DELETE FROM category WHERE id ='$value'";
+        mysql_query ($sql);
 
       echo
       '
-        <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['item'] . '</strong>
+        <p>Спасибі, що скористалися нашою формою. Ви видалили категорію <strong>' . $_POST['item'][0] . '</strong>
       ';
     }
   }
