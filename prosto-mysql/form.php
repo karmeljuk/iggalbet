@@ -66,8 +66,8 @@ elseif (isset($_POST['add-product-name'])) {
   else {
       foreach($_POST['product-name'] as $value) {
 
-        $sql = "INSERT INTO product WHERE category_id ='$value'";
-        mysql_query ($sql);
+        mysql_insert('product', array('product_name' => $_POST['product-name'], 'price' => $_POST['product-price'], ));
+        mysql_insert_id();
 
       echo
       '
