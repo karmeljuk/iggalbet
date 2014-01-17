@@ -64,6 +64,10 @@ elseif (isset($_POST['add-product-name'])) {
     echo "<p>Ви не зазначили жодної продукту</p>";
   }
   else {
+    echo $_POST['item'][0].'<br>';
+
+    var_dump($_POST['item'][0]);
+
       mysql_insert('product',
         array(
           'product_name' => $_POST['product-name'],
