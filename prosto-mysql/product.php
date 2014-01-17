@@ -21,23 +21,23 @@
       </div>
     </div>
 
-    <!-- Multiple Checkboxes -->
-    <div class="control-group">
-      <label class="control-label" for="checkboxes">Виберіть категорію</label>
-      <div class="controls">
-      <?php
-        $sql = mysql_query("select * from category");
-        while($cat_name = mysql_fetch_object($sql)) :
-        $name = $cat_name->cat_name;
-        $id = $cat_name->id;
-      ?>
-        <label class="checkbox" for="<?php echo $name; ?>">
-          <input type="checkbox" name="item[]" value="<?php echo $id; ?>" id="<?php echo $name; ?>">
-          <?php echo $id; ?><span>. </span><?php echo $name; ?>
-        </label>
-      <?php endwhile; ?>
-      </div>
-    </div>
+<!--     Multiple Checkboxes
+<div class="control-group">
+  <label class="control-label" for="checkboxes">Виберіть категорію</label>
+  <div class="controls">
+  <?php
+    $sql = mysql_query("select * from category");
+    while($cat_name = mysql_fetch_object($sql)) :
+    $name = $cat_name->cat_name;
+    $id = $cat_name->id;
+  ?>
+    <label class="checkbox" for="<?php echo $name; ?>">
+      <input type="checkbox" name="item[]" value="<?php echo $id; ?>" id="<?php echo $name; ?>">
+      <?php echo $id; ?><span>. </span><?php echo $name; ?>
+    </label>
+  <?php endwhile; ?>
+  </div>
+</div> -->
 
     <!-- Button -->
     <div class="control-group">

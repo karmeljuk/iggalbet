@@ -61,21 +61,31 @@ elseif (isset($_POST['category-del'])) {
 elseif (isset($_POST['add-product-name'])) {
 
   if(empty($_POST['product-name'])) {
-    echo "<p>Ви не зазначили жодної продукту</p>";
+    echo "<p>Ви не зазначили продукту або ціну, а можливо забули вибрати категорію</p>";
   }
   else {
-    echo $_POST['item'][0].'<br>';
+    // echo $_POST['item'][0].'<br>';
 
-    var_dump($_POST['item'][0]);
+
+    var_dump($_POST['product-name'][0]);
+    var_dump($_POST['product-price'][0]);
+    // var_dump($_POST['item'][0]);
+
 
       mysql_insert('product',
         array(
           'product_name' => $_POST['product-name'],
-          'price' => $_POST['product-price'],
-          'category_id' => $_POST['item'][0]
+          'price' => $_POST['product-price']
           )
         );
       mysql_insert_id();
+
+      /*foreach($_POST['item'] as $value) {
+
+        $sql = "DELETE FROM category WHERE id ='$value'";
+        mysql_query ($sql);*/
+
+
       // mysql_insert('category', array('cat_name' => $_POST['name'] ));
 
 
