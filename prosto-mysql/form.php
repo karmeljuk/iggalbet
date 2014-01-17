@@ -64,8 +64,16 @@ elseif (isset($_POST['add-product-name'])) {
     echo "<p>Ви не зазначили жодної продукту</p>";
   }
   else {
-      mysql_insert('product', array('product_name' => $_POST['product-name'], 'price' => $_POST['product-price'], 'category_id' => $_POST['item'][0],));
+      mysql_insert('product',
+        array(
+          'product_name' => $_POST['product-name'],
+          'price' => $_POST['product-price'],
+          'category_id' => $_POST['item'][0]
+          )
+        );
       mysql_insert_id();
+      // mysql_insert('category', array('cat_name' => $_POST['name'] ));
+
 
     echo
     '
