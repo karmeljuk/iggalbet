@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Час створення: Січ 16 2014 р., 16:01
+-- Час створення: Січ 17 2014 р., 12:50
 -- Версія сервера: 5.5.34
 -- Версія PHP: 5.4.6-1ubuntu1.5
 
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `category` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cat_name` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `cat_name` varchar(250) NOT NULL,
+  UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -43,15 +43,27 @@ INSERT INTO `category` (`id`, `cat_name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Структура таблиці `category01`
+--
+
+CREATE TABLE IF NOT EXISTS `category01` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `cat_name` varchar(45) DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблиці `product`
 --
 
 CREATE TABLE IF NOT EXISTS `product` (
+  `id` int(11) NOT NULL,
   `product_name` varchar(16) NOT NULL,
-  `price` tinyint(4) DEFAULT NULL,
+  `price` float NOT NULL,
   `category_id` int(11) NOT NULL,
-  `id` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `fk_product_category_idx` (`category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -62,10 +74,13 @@ CREATE TABLE IF NOT EXISTS `product` (
 --
 
 CREATE TABLE IF NOT EXISTS `product_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `product_id` varchar(45) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`),
   KEY `fk_product_list_product1_idx` (`product_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
 -- Constraints for dumped tables
@@ -75,7 +90,7 @@ CREATE TABLE IF NOT EXISTS `product_list` (
 -- Constraints for table `product`
 --
 ALTER TABLE `product`
-  ADD CONSTRAINT `fk_product_category` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_product_category` FOREIGN KEY (`category_id`) REFERENCES `category01` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `product_list`
