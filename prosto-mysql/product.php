@@ -61,10 +61,10 @@
   <label class="control-label" for="checkboxes">Виберіть товар для видалення</label>
   <div class="controls">
   <?php
-    $sql = mysql_query("select * from category");
-    while($cat_name = mysql_fetch_object($sql)) :
-    $name = $cat_name->cat_name;
-    $id = $cat_name->id;
+    $sql = mysql_query("select * from product");
+    while($product_name = mysql_fetch_object($sql)) :
+    $name = $product_name->product_name;
+    $id = $product_name->id;
   ?>
     <label class="checkbox" for="<?php echo $name; ?>">
       <input type="checkbox" name="item[]" value="<?php echo $id; ?>" id="<?php echo $name; ?>">

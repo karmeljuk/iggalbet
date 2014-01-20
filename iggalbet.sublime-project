@@ -3,7 +3,21 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "."
+			"path": ".",
+      "file_exclude_patterns":[
+       "._*",
+       "*.bak",
+       "*.ico",
+       "*.sample",
+       "*.swf",
+       "*.tar",
+       "*.tgz",
+       "wp-*.php",
+       "*.zip"
+    ]
 		}
+
 	]
+
 }
+

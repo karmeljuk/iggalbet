@@ -67,8 +67,8 @@ elseif (isset($_POST['add-product-name'])) {
     // echo $_POST['item'][0].'<br>';
 
 
-    var_dump($_POST['product-name'][0]);
-    var_dump($_POST['product-price'][0]);
+    var_dump($_POST['product-name']);
+    var_dump($_POST['product-price']);
     // var_dump($_POST['item'][0]);
 
 
